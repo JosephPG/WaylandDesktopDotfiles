@@ -1,0 +1,87 @@
+thunar-window,
+.thunar-window,
+thunar-view,
+.view {
+    background-color: #1E1E1E;
+    color: #B0B0B0; /* whiteText */
+}
+
+.view:selected,
+.sidebar:selected,
+treeview:selected,
+.content-view:selected {
+    background-color: #734141; /* Carmesí */
+    color: #ffffff;
+}
+
+.thunar .sidebar {
+    border: 1px solid #0b0c10;
+}
+
+.thunar .standard-view {
+    border: 1px solid #0b0c10;
+}
+
+/* Toolbar */
+.thunar toolbar, window.thunar toolbar {
+    background-color: #1E1E1E;
+}
+
+.toolbar,
+thunar-location-entry,
+thunar-path-entry,
+entry {
+    background-color: #343a40;
+    color: #B0B0B0;
+    border: none;
+}
+
+.thunar toolbar button:hover {
+    background-color: #343a40; /* Cambia este código por tu color de fondo preferido */
+    border-color: #343a40;     /* Cambia este código por tu color de borde preferido */
+    background-image: none;    /* Elimina gradientes predeterminados del tema actual */
+}
+
+.thunar toolbar image {
+    -gtk-icon-style: symbolic;
+    color: #B0B0B0;
+}
+
+.thunar toolbar button:disabled image {
+    -gtk-icon-style: symbolic;
+    color: #383838;
+}
+
+.thunar toolbar entry:focus {
+    box-shadow: 0 0 0 1px #734141; /* Añade un destello sutil a juego (opcional) */
+}
+
+/* Right click Menu */
+menu, .menu, context-menu {
+    background-color: #343a40;
+    color: #B0B0B0;
+}
+
+menu menuitem:hover, .menu menuitem:hover {
+    background-color: #734141;
+    color: #B0B0B0;
+}
+
+menu menuitem:disabled,
+menu menuitem:disabled label,
+.menu menuitem:disabled,
+.menu menuitem:disabled label {
+    color: #888888;
+}
+
+/* TreeView */
+treeview header button,
+MutedButton,
+.column-header button {
+    background-color: #1E1E1E;
+    background-image: none;
+    color: #B0B0B0;
+    border-color: #1E1E1E;
+    border-style: solid;
+    border-width: 1px;
+}

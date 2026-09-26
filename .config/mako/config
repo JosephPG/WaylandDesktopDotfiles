@@ -1,0 +1,49 @@
+# -------------------------------------------------------------
+# ESTILO GLOBAL (Basado exactamente en tu barra lateral QML)
+# -------------------------------------------------------------
+font=sans-serif 11
+background-color=#0b0c10
+text-color=#B0B0B0
+border-size=2
+border-color=#313244
+border-radius=8
+progress-color=over #313244
+
+# -------------------------------------------------------------
+# COMPORTAMIENTO Y COMPOSICIÓN
+# -------------------------------------------------------------
+# Ajusta la posición según dónde esté tu barra (ej. top-right o top-left)
+anchor=top-right
+margin=20,20
+padding=15
+width=300
+height=110
+
+# Tiempo en pantalla en milisegundos (5 segundos)
+default-timeout=5000
+ignore-timeout=0
+
+# Configuración de iconos
+max-icon-size=48
+icon-path=/usr/share/icons/hicolor
+
+# Formato del texto (Título en negrita, salto de línea y cuerpo)
+format=<b>%s</b>\n%b
+
+# -------------------------------------------------------------
+# REGLAS POR PRIORIDAD (Manejo dinámico de colores)
+# -------------------------------------------------------------
+
+# Alertas Urgentes (Por ejemplo, batería baja 0%)
+[urgency=high]
+border-color=#f38ba8
+text-color=#f38ba8
+# Mantiene la notificación visible hasta que tú la cierres
+default-timeout=0
+
+# Notificaciones de aplicaciones de mensajería o música (Verde combinando con tus iconos)
+[category=im]
+border-color=#98e6a5
+
+[category=music]
+border-color=#98e6a5
