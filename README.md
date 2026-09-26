@@ -96,15 +96,5 @@ hyprpaper picks images from `~/Pictures/wallpapers` and changes the wallpaper ev
 ```
 hyprland hyprpaper hyprpolkitagent hyprlauncher quickshell mako rofi foot thunar
 playerctl bluez-utils networkmanager wl-clipboard cliphist grim slurp swappy
-papirus-icon-theme ttf-jetbrains-mono-nerd
+papirus-icon-theme papirus-folders ttf-jetbrains-mono-nerd pear-desktop
 ```
-
-## Installation
-
-```bash
-git clone <repo-url> ~/WaylandDesktopDotfiles
-cp -r ~/WaylandDesktopDotfiles/.config/* ~/.config/
-mkdir -p ~/Pictures/wallpapers && cp ~/WaylandDesktopDotfiles/images/bloodborne1.jpg ~/Pictures/wallpapers/
-```
-
-> Back up your `~/.config` before copying. If you use a different monitor, change `monitor = eDP-1` in `hyprpaper.conf`. If your battery isn't `BAT0`, update the path in `SystemInfo.qml`.
